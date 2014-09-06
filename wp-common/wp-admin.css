@@ -117,8 +117,14 @@
 	border-bottom-color: #fff;
 }
 
-.post-meta-box .tabs li a:focus {
+.plugin-admin .tabs li a:focus,
+.plugin-admin .tabs li.ui-state-focus:focus,
+.plugin-admin .tabs li.ui-state-focus a:focus,
+.post-meta-box .tabs li a:focus,
+.post-meta-box .tabs li.ui-state-focus:focus,
+.post-meta-box .tabs li.ui-state-focus a:focus {
 	outline: none !important;
+	box-shadow: none !important;
 }
 
 .error p {

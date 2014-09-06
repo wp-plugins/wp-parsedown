@@ -167,10 +167,11 @@ class PluginUtils {
 		if ( empty($msg)) return false;
 		$r = '<div class="'. $level .'">'. sprintf ( __('<strong>Error:</strong> %s', 'PluginUtils' ),  $msg ) .'</div>';
 
-		if ( $network )
+		/* if ( $network )
 			add_action( 'network_admin_notices', array( &$this, 'display_errors') );
 		else
 			add_action( 'admin_notices', array( &$this, 'display_errors') );
+		*/
 	}
 
 	public function valid_url ( &$str ) {
