@@ -3,7 +3,7 @@
 Plugin Name: WP-Parsedown
 Plugin URI: https://github.com/petermolnar/wp-parsedown
 Description: [Parsedown Extra](www.parsedown.org/demo?extra=1) on-the-fly
-Version: 0.3
+Version: 0.4
 Author: Peter Molnar <hello@petermolnar.eu>
 Author URI: https://petermolnar.eu/
 License: GPLv3
@@ -34,7 +34,7 @@ class WP_PARSEDOWN {
 		$post = get_post();
 
 		if ( defined( 'WP_DEBUG' ) && WP_DEBUG == true ) {
-			$message = sprintf ( __('parsing post: %s', $this->plugin_constant),  $post->ID );
+			$message = sprintf ( __('parsing post: %s'),  $post->ID );
 			error_log(  __CLASS__ . ": " . $message );
 		}
 
